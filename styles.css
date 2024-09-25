@@ -52,6 +52,7 @@
 body {
   margin:0px 0px 0px 0px;
   background-image: url("./gradient_background.png");
+  background-size: auto;
 }
 
 /* CAROUSAL */
@@ -82,7 +83,7 @@ body {
   padding: 8%;
   margin-top: 10%;
   font-family:'Judson';
-  width:98%
+  /* width:98% */
   /* display: block; */
   /* margin:2%; */
 }
