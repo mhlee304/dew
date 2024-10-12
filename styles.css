@@ -682,13 +682,13 @@ body {
   }
 
   .step-header {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 3em;
+    font-weight:bold;
     margin-top: 0;
   }
 
   .step-description {
-    font-size: 18px;
+    font-size: 32px;
   }
 
   /* .step-img {
