@@ -672,10 +672,13 @@ body {
 
   .demo-columns {
     display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
+    overflow-x: auto;
+    /* flex-wrap: row;
+    justify-content: space-between; */
     padding-left:0%;
     padding-right:0%;
+    flex-wrap: nowrap;
+    width:3000px;
 
   }
 
@@ -686,13 +689,26 @@ body {
     text-align: center;
     padding: 20px; */
     /* width:100%; */
-    box-sizing: border-box; /* Ensures padding and borders don't affect width */
+    /* box-sizing: border-box; Ensures padding and borders don't affect width */
+    width:500px;
+    margin-right:10px;
+
+
+
     padding:1%;
     margin:0%;
   }
 
   .demo-img {
     width:100%;
+  }
+
+  .demo {
+    padding-top:10%;
+    padding-bottom: 5%;
+    width: 95% !important;  /* Ensures full width */
+    padding-right:2.5% !important;
+    padding-left:2.5% !important;
   }
 
   
