@@ -599,6 +599,36 @@ body {
 }
 
 
+.demo-header {
+  font-family: 'Source Serif 4';
+  font-size:2.8em;
+  color: black;
+  margin:0px;
+  font-weight: bold;
+  padding-left:10%;
+  padding-right:10%
+
+}
+
+.demo-description {
+  font-family: 'Space Grotesk';
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left:10%;
+  padding-right:10%
+}
+
+.demo-scroll {
+  display:none;
+}
+
+.typeform {
+  display:block;
+}
+.typeform-mobile {
+  display:none;
+}
+
 
 
 
@@ -670,16 +700,39 @@ body {
   } */
 
 
+  .demo-header {
+    font-size:5em;
+    padding-left:0%;
+    padding-right:0%
+  }
+
+  .demo-description {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size:32px;
+    font-weight: lighter;
+  }
+
+  .demo-scroll {
+    display:block;
+    font-family: 'Space Grotesk';
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+  }  
+
   .demo-columns {
     display: flex;
     overflow-x: auto;
     /* flex-wrap: row;
     justify-content: space-between; */
-    padding-left:0%;
+    padding-left:2%;
     padding-right:0%;
     flex-wrap: nowrap;
-    width:3000px;
-
+    /* width:3000px; */
+    /* flex-direction: ; */
+    width:100%;
+    justify-content:flex-start;
   }
 
   .demo-column {
@@ -690,17 +743,17 @@ body {
     padding: 20px; */
     /* width:100%; */
     /* box-sizing: border-box; Ensures padding and borders don't affect width */
-    width:500px;
+    width:600px;
     margin-right:10px;
-
-
-
-    padding:1%;
+    height:auto;
+    padding:5%;
     margin:0%;
   }
+  
+ 
 
   .demo-img {
-    width:100%;
+    width:600px;
   }
 
   .demo {
@@ -711,6 +764,45 @@ body {
     padding-left:2.5% !important;
   }
 
+  .sign {
+    padding-top:10%;
+    padding-bottom: 5%;
+    width: 95% !important;  /* Ensures full width */
+    padding-right:2.5% !important;
+    padding-left:2.5% !important;
+    min-height: auto;
+  }
+
+  .typeform-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left:0%;
+    padding-right:0%;
+    min-height: 1100px;
+    padding-bottom:5%;
+    
+  }
+  .typeform {
+    display:none;
+  }
+  .typeform-mobile {
+
+    transform:scale(1.7);
+    display:block;
+    /* width:100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    height:100%;
+  }
   
+
+
 
 }
