@@ -96,8 +96,6 @@ body {
   background-size:     cover;  
   padding-top:10%;
   padding-bottom: 5%;
-
-
 }
 
 .hello-header {
@@ -151,10 +149,88 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+.cosmetics_box_img {
+  width:400px;
+}
+
+
+/* WELCOME COLUMNS */
+
+@media (max-device-width: 800px) {
+
+  .dew-icon {
+    height: 120px;
+    width: auto ;
+    padding:0px;
+  }
+  
+  .sign-up-button {
+    font-size:36px;
+    width: auto;
+    height: 80px;
+    min-width: 350px;
+  }
+
+
+  .welcome {
+    color:white;
+    background-image: url("gradient_background.png");
+    background-position: center center; 
+    background-size:     cover;  
+    padding-top:10%;
+    padding-bottom: 5%;
+  }
+
+  .hello-header {
+    font-size: 5em;
+  }
+
+  .welcome-header {
+    font-size: 7em;
+    line-height: 100%;
+  }
+
   .welcome-columns {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
   }
+
+  .left-column {
+    width: 95% !important;  /* Ensures full width */
+    /* padding: 0;               */
+    /* margin: 20px;                */
+    padding-right:2.5% !important;
+    padding-left:2.5% !important;
+  }
+  .right-column {
+    display: flex;
+    justify-content: center;
+    width: 95% !important;
+    /* margin:20px; */
+    /* padding:0 !important; */
+  }
+
+  .cosmetics_box_img {
+    content:url("cosmetics_mobile.png");
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .centered-button {
+    font-size:56px !important;
+    text-align: center;
+  
+    width: auto;
+    height: 120px;
+    min-width: 80%;
+    margin-top: 10%;
+  }
+
+
+  /* MAXIMIZE */
+
 }
 
 .left-column {
@@ -247,6 +323,117 @@ body {
 
 .bullet-right-column {
   width:90%;
+}
+
+.desktop-phones {
+  display: block;
+}
+
+.mobile-phones {
+  display: none;
+}
+
+.bullet-img {
+  width:50px;
+}
+
+
+@media (max-device-width: 800px) {
+  .maximize {
+    padding-top:10%;
+    padding-bottom: 5%;
+  }
+  .maximize-columns {
+    /* two columns */
+    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-top: 6%;
+    padding-bottom:6%;
+    padding:10px;
+  }
+  .maximize-left-column, .maximize-right-column {
+    width: 95% !important;  /* Ensures full width */
+    /* padding: 0;               */
+    /* margin: 20px;                */
+    padding-right:2.5% !important;
+    padding-left:2.5% !important;
+  }
+
+
+  .maximize-right-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .maximize-header {
+    font-size:5em;
+    /* order:1; */
+  }
+  .desktop-phones {
+    display: none;
+  }
+  
+  .mobile-phones {
+    width:95%;
+    display: block;
+    height:auto;
+  }
+
+
+  .bullet-header {
+    font-size: 3em;
+    font-weight: 900;
+  } 
+
+  .bullet-description {
+    font-size: 1.8em;
+  }
+
+  .bullet {
+    padding:1%;
+    /* padding-top: 3% !important; */
+    width:90%;
+    /* justify-content: center;
+    display: flex; */
+    
+  }
+
+  .bullets {
+    padding-top:3%;
+    margin: 0 auto;
+  }
+
+
+  .bullet-left-column {
+    width:10%;
+    /* margin-right: 4%; */
+  }
+
+
+  .bullet-right-column {
+    width:90%;
+  }
+
+  .bullet-img {
+    width:100px;
+  }
+
+
+  .phones-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .center-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;    /* Keep the aspect ratio */
+  }
+
+  .maximize-retention {
+    font-size: 1em;
+  }
 }
 
 
@@ -380,4 +567,31 @@ body {
   font-family: 'Space Grotesk';
   font-size: 1.3em;
   font-weight: bold;
+}
+
+
+
+@media (max-device-width: 800px) {
+  .process {
+    padding-top:10%;
+    padding-bottom: 5%;
+    width: 95% !important;  /* Ensures full width */
+    padding-right:2.5% !important;
+    padding-left:2.5% !important;
+  }
+
+  .process-header {
+    font-size:5em;
+    padding-left:0%;
+    padding-right:0%
+  }
+
+  .process-description {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: 1em;
+  }
+
+  
+
 }
