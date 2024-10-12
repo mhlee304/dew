@@ -571,6 +571,36 @@ body {
 }
 
 
+.demo-column {
+  width:40%;
+  padding:1%;
+}
+
+.demo-columns {
+  /* two columns */
+  display: flex;
+  justify-content: center;
+  /* padding-left: ; */
+  /* padding-left:7%;
+  padding-right:7%; */
+  padding-top: 1%;
+  
+  padding-left:10%;
+  padding-right:10%;
+  /* flex-wrap: wrap; */
+  flex-direction:row;
+}
+
+
+.demo-img {
+  display: block;      
+  margin: 0 auto; 
+  width:100%;
+}
+
+
+
+
 
 @media (max-device-width: 800px) {
   .process {
@@ -603,11 +633,11 @@ body {
     padding:10px;
   }
   .process-column{
-    width: 96% !important;  /* Ensures full width */
+    width: 96%;  /* Ensures full width */
     /* padding: 0;               */
     /* margin: 20px;                */
-    padding-right:2% !important;
-    padding-left:2% !important;
+    padding-right:2%;
+    padding-left:2%;
     padding-bottom: 5%;
     /* flex-direction: row; */
     display:flex;
@@ -638,6 +668,32 @@ body {
   .step-process {
     display:flex;
   } */
+
+
+  .demo-columns {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    padding-left:0%;
+    padding-right:0%;
+
+  }
+
+  .demo-column {
+    /* flex-basis: 30%; Each column takes about 30% of the row */
+    /* margin: 10px; Optional: adds spacing between items */
+    /* background-color: lightblue;
+    text-align: center;
+    padding: 20px; */
+    /* width:100%; */
+    box-sizing: border-box; /* Ensures padding and borders don't affect width */
+    padding:1%;
+    margin:0%;
+  }
+
+  .demo-img {
+    width:100%;
+  }
 
   
 
